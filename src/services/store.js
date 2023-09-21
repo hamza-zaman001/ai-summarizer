@@ -1,10 +1,20 @@
+// import { configureStore } from '@reduxjs/toolkit';
+
+// import { articleApi } from './article';
+
+// export const store = configureStore({
+//     reducer: {
+//         [articleApi.reducerPath]: articleApi.reducer
+//     },
+//     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(articleApi.middleware)
+// });
+
+
 import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from '../features/counterSlice';
 
-import { articleApi } from './article';
-
-export const store = configureStore({
-    reducer: {
-        [articleApi.reducerPath]: articleApi.reducer
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(articleApi.middleware)
+export default configureStore({
+reducer: {
+counter: counterReducer,
+},
 });
