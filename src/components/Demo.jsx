@@ -60,7 +60,6 @@ const Demo = () => {
           required
           className='url_input peer' 
           />
-
           <button
           type='submit'
           className='submit_btn
