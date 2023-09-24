@@ -8,13 +8,3 @@ export const store = configureStore({
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(articleApi.middleware)
 });
-
-
-// import { configureStore } from '@reduxjs/toolkit';
-// import counterReducer from '../features/counterSlice';
-
-// export default configureStore({
-// reducer: {
-// counter: counterReducer,
-// },
-// });
